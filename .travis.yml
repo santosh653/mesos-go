@@ -10,9 +10,9 @@ env:
   - PROTOBUF_VERSION=3.3.0
 go:
   # update validate-protobufs Makefile target once golang 1.11.x is no longer tested here
-  - 1.9.x
-  - 1.10.x
-  - 1.11.x
+  - 1.13.x
+  - 1.14.x
+  - 1.15.x
 before_install:
    #these two lines help users who fork mesos-go. It's a noop when running from the mesos organization
   - RepoName=`basename $PWD`; SrcDir=`dirname $PWD`; DestDir="`dirname $SrcDir`/mesos"
